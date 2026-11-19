@@ -1,0 +1,1951 @@
+{
+ "WARNING": "Round 2 analysis on real responses. Group weights are descriptive where fewer than five valid responses exist; E-O1 is exploratory (Stage 2 plan, amendment 3).",
+ "round2_closed": "2026-10-20",
+ "environment": {
+  "python": "3.13.18",
+  "platform": "Linux-6.18.44-fc-v185-x86_64-with-glibc2.39",
+  "timestamp_utc": "2026-11-01T15:16:07+00:00",
+  "numpy": "2.5.3",
+  "scipy": "1.18.1",
+  "sklearn": "1.9.1",
+  "matplotlib": "3.11.2",
+  "openpyxl": "3.1.5"
+ },
+ "imported": "2026-10-19T17:52:35+00:00",
+ "corrections_applied": [
+  {
+   "code": "R06",
+   "scenario": "S1",
+   "source": "Teams message from the panellist, 19 Oct 2026, 17:18 (author's local time): 'done, but I did mistake in Scenario 3, correct answers are: ...'.",
+   "recorded": "2026-10-19"
+  }
+ ],
+ "scenarios": {
+  "S1": {
+   "scenario": "S1",
+   "parsed_responses": 4,
+   "valid_A1": 3,
+   "weights": {
+    "experts": [
+     "R02",
+     "R03",
+     "R06"
+    ],
+    "individual": {
+     "R02": {
+      "TTDP": 0.0625,
+      "AIRD": 0.1161,
+      "PORT": 0.2321,
+      "TCO": 0.1429,
+      "SECC": 0.4464
+     },
+     "R03": {
+      "TTDP": 0.1019,
+      "AIRD": 0.0367,
+      "PORT": 0.1019,
+      "TCO": 0.2378,
+      "SECC": 0.5217
+     },
+     "R06": {
+      "TTDP": 0.0613,
+      "AIRD": 0.1176,
+      "PORT": 0.1961,
+      "TCO": 0.1471,
+      "SECC": 0.4779
+     }
+    },
+    "group_geometric": {
+     "TTDP": 0.0752,
+     "AIRD": 0.0818,
+     "PORT": 0.1717,
+     "TCO": 0.176,
+     "SECC": 0.4953
+    },
+    "group_arithmetic": {
+     "TTDP": 0.0752,
+     "AIRD": 0.0901,
+     "PORT": 0.1767,
+     "TCO": 0.1759,
+     "SECC": 0.482
+    },
+    "group_consistent_only": {
+     "TTDP": 0.0625,
+     "AIRD": 0.1161,
+     "PORT": 0.2321,
+     "TCO": 0.1429,
+     "SECC": 0.4464
+    },
+    "kendalls_W": 0.7778,
+    "responses": [
+     {
+      "expert": "R02",
+      "attention_ok": true,
+      "attention_reasons": [],
+      "CR": 0.0238,
+      "threshold": 0.2819,
+      "consistent": true,
+      "recontact_criterion": null,
+      "xi_L": 0.0179
+     },
+     {
+      "expert": "R03",
+      "attention_ok": true,
+      "attention_reasons": [],
+      "CR": 0.6528,
+      "threshold": 0.3062,
+      "consistent": false,
+      "recontact_criterion": "PORT",
+      "xi_L": 0.1916
+     },
+     {
+      "expert": "R05",
+      "attention_ok": false,
+      "attention_reasons": [
+       "best criterion not rated 1 in best-to-others",
+       "best-to-worst differs between the vectors by more than 1"
+      ],
+      "CR": 11.5,
+      "threshold": 0.1667,
+      "consistent": false,
+      "recontact_criterion": "SECC",
+      "xi_L": 0.5542
+     },
+     {
+      "expert": "R06",
+      "attention_ok": true,
+      "attention_reasons": [],
+      "CR": 0.3333,
+      "threshold": 0.2643,
+      "consistent": false,
+      "recontact_criterion": "TCO",
+      "xi_L": 0.1103
+     }
+    ]
+   },
+   "A14_run": false,
+   "ranking_descriptive": {
+    "scenario": "S1",
+    "secc_floor_excluded": [
+     "C2",
+     "C4",
+     "C6",
+     "C7"
+    ],
+    "topsis": {
+     "C1": 0.0,
+     "C3": 0.2656,
+     "C5": 0.7344
+    },
+    "order_topsis": [
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "order_topsis_minmax": [
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "order_promethee_vshape": [
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "order_promethee_usual": [
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "tau_b_topsis_promethee": 1.0,
+    "order_topsis_arithmetic_weights": [
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "variants": {},
+    "frontier_pair": [
+     "SECC",
+     "TCO"
+    ]
+   },
+   "choice_counts": {
+    "MOST": {
+     "TTDP": 0,
+     "AIRD": 0,
+     "PORT": 0,
+     "TCO": 0,
+     "SECC": 4
+    },
+    "LEAST": {
+     "TTDP": 2,
+     "AIRD": 1,
+     "PORT": 1,
+     "TCO": 0,
+     "SECC": 0
+    },
+    "n": 4
+   },
+   "E-O1": {
+    "scenario": "S1",
+    "panellists": [
+     "R02",
+     "R03",
+     "R05",
+     "R06"
+    ],
+    "dropped_same_most_least": [],
+    "secc_floor_excluded": [
+     "C2",
+     "C4",
+     "C6",
+     "C7"
+    ],
+    "main": {
+     "first_rank": {
+      "C1": 0.003,
+      "C3": 0.2475,
+      "C5": 0.7495
+     },
+     "acceptability": {
+      "C1": [
+       0.003,
+       0.1537,
+       0.8433
+      ],
+      "C3": [
+       0.2475,
+       0.6019,
+       0.1506
+      ],
+      "C5": [
+       0.7495,
+       0.2444,
+       0.0061
+      ]
+     },
+     "central_weights": {
+      "C1": [
+       0.0631,
+       0.1297,
+       0.1153,
+       0.3256,
+       0.3663
+      ],
+      "C3": [
+       0.2266,
+       0.1119,
+       0.11,
+       0.1728,
+       0.3788
+      ],
+      "C5": [
+       0.0645,
+       0.1448,
+       0.1461,
+       0.1649,
+       0.4798
+      ]
+     },
+     "confidence": {
+      "C1": 0.033,
+      "C3": 1.0,
+      "C5": 1.0
+     }
+    },
+    "a1_only_panellists": [
+     "R02",
+     "R03",
+     "R06"
+    ],
+    "a1_only": {
+     "first_rank": {
+      "C1": 0.002,
+      "C3": 0.1801,
+      "C5": 0.8179
+     },
+     "acceptability": {
+      "C1": [
+       0.002,
+       0.1981,
+       0.7999
+      ],
+      "C3": [
+       0.1801,
+       0.6247,
+       0.1952
+      ],
+      "C5": [
+       0.8179,
+       0.1772,
+       0.0049
+      ]
+     },
+     "central_weights": {
+      "C1": [
+       0.0464,
+       0.119,
+       0.1475,
+       0.3246,
+       0.3624
+      ],
+      "C3": [
+       0.2175,
+       0.0671,
+       0.161,
+       0.1795,
+       0.375
+      ],
+      "C5": [
+       0.0534,
+       0.1367,
+       0.1686,
+       0.1661,
+       0.4752
+      ]
+     },
+     "confidence": {
+      "C1": 0.0322,
+      "C3": 0.9952,
+      "C5": 1.0
+     }
+    },
+    "no_floor": {
+     "first_rank": {
+      "C1": 0.0,
+      "C2": 0.0007,
+      "C3": 0.0681,
+      "C4": 0.0191,
+      "C5": 0.8937,
+      "C6": 0.0184,
+      "C7": 0.0
+     },
+     "acceptability": {
+      "C1": [
+       0.0,
+       0.1582,
+       0.5523,
+       0.0227,
+       0.1073,
+       0.0881,
+       0.0714
+      ],
+      "C2": [
+       0.0007,
+       0.0176,
+       0.0457,
+       0.1247,
+       0.1637,
+       0.3973,
+       0.2503
+      ],
+      "C3": [
+       0.0681,
+       0.5992,
+       0.1641,
+       0.0257,
+       0.0643,
+       0.0563,
+       0.0223
+      ],
+      "C4": [
+       0.0191,
+       0.0742,
+       0.1113,
+       0.334,
+       0.2804,
+       0.1237,
+       0.0573
+      ],
+      "C5": [
+       0.8937,
+       0.0716,
+       0.016,
+       0.0176,
+       0.0011,
+       0.0,
+       0.0
+      ],
+      "C6": [
+       0.0184,
+       0.0779,
+       0.1077,
+       0.3405,
+       0.2696,
+       0.126,
+       0.0599
+      ],
+      "C7": [
+       0.0,
+       0.0013,
+       0.0029,
+       0.1348,
+       0.1136,
+       0.2086,
+       0.5388
+      ]
+     },
+     "central_weights": {
+      "C1": null,
+      "C2": [
+       0.0464,
+       0.0773,
+       0.3403,
+       0.1873,
+       0.3487
+      ],
+      "C3": [
+       0.2904,
+       0.1099,
+       0.0749,
+       0.1647,
+       0.3601
+      ],
+      "C4": [
+       0.1462,
+       0.0884,
+       0.2845,
+       0.1662,
+       0.3146
+      ],
+      "C5": [
+       0.0877,
+       0.1415,
+       0.1353,
+       0.1663,
+       0.4692
+      ],
+      "C6": [
+       0.1438,
+       0.0832,
+       0.2932,
+       0.1553,
+       0.3245
+      ],
+      "C7": null
+     },
+     "confidence": {
+      "C1": null,
+      "C2": 0.1119,
+      "C3": 0.9526,
+      "C4": 0.4453,
+      "C5": 1.0,
+      "C6": 0.4433,
+      "C7": null
+     }
+    },
+    "variants": {
+     "K9 C6 TTDP=1": {
+      "C1": 0.0028,
+      "C3": 0.2417,
+      "C5": 0.7555
+     },
+     "K7 Enterprise edition": {
+      "C1": 0.0028,
+      "C3": 0.2417,
+      "C5": 0.7555
+     },
+     "K11 directional TCO": {
+      "C1": 0.0559,
+      "C3": 0.3513,
+      "C5": 0.5928
+     }
+    },
+    "uniform_reference": {
+     "first_rank": {
+      "C1": 0.0361,
+      "C3": 0.6707,
+      "C5": 0.2932
+     },
+     "acceptability": {
+      "C1": [
+       0.0361,
+       0.2233,
+       0.7406
+      ],
+      "C3": [
+       0.6707,
+       0.2404,
+       0.0889
+      ],
+      "C5": [
+       0.2932,
+       0.5363,
+       0.1705
+      ]
+     },
+     "central_weights": {
+      "C1": [
+       0.0673,
+       0.1916,
+       0.1992,
+       0.4203,
+       0.1216
+      ],
+      "C3": [
+       0.2662,
+       0.2016,
+       0.1956,
+       0.1889,
+       0.1477
+      ],
+      "C5": [
+       0.0694,
+       0.195,
+       0.1936,
+       0.2092,
+       0.3327
+      ]
+     },
+     "confidence": {
+      "C1": 0.1584,
+      "C3": 1.0,
+      "C5": 0.9246
+     }
+    }
+   },
+   "E-C1": {
+    "answers": {
+     "R02": {
+      "direction": "Carbon intensity matters less",
+      "rating": 7,
+      "a": 7.0,
+      "consistent": true
+     },
+     "R03": {
+      "direction": "Carbon intensity matters less",
+      "rating": 6,
+      "a": 6.0,
+      "consistent": true
+     },
+     "R05": {
+      "direction": "Carbon intensity matters less",
+      "rating": 4,
+      "a": 4.0,
+      "consistent": true
+     },
+     "R06": {
+      "direction": "Equally important",
+      "rating": 5,
+      "a": 1.0,
+      "consistent": false
+     }
+    },
+    "carbon_weight_valid_bwm": {
+     "R02": 0.05995203836930456,
+     "R03": 0.08,
+     "R06": 0.32338308457711445
+    },
+    "inconsistent_answers": 1
+   }
+  },
+  "S2": {
+   "scenario": "S2",
+   "parsed_responses": 4,
+   "valid_A1": 2,
+   "weights": {
+    "experts": [
+     "R02",
+     "R06"
+    ],
+    "individual": {
+     "R02": {
+      "TTDP": 0.4567,
+      "AIRD": 0.2362,
+      "PORT": 0.0551,
+      "TCO": 0.1575,
+      "SECC": 0.0945
+     },
+     "R06": {
+      "TTDP": 0.4213,
+      "AIRD": 0.2528,
+      "PORT": 0.0562,
+      "TCO": 0.1685,
+      "SECC": 0.1011
+     }
+    },
+    "group_geometric": {
+     "TTDP": 0.4389,
+     "AIRD": 0.2445,
+     "PORT": 0.0557,
+     "TCO": 0.163,
+     "SECC": 0.0978
+    },
+    "group_arithmetic": {
+     "TTDP": 0.439,
+     "AIRD": 0.2445,
+     "PORT": 0.0556,
+     "TCO": 0.163,
+     "SECC": 0.0978
+    },
+    "group_consistent_only": {
+     "TTDP": 0.4567,
+     "AIRD": 0.2362,
+     "PORT": 0.0551,
+     "TCO": 0.1575,
+     "SECC": 0.0945
+    },
+    "kendalls_W": 1.0,
+    "responses": [
+     {
+      "expert": "R02",
+      "attention_ok": true,
+      "attention_reasons": [],
+      "CR": 0.0357,
+      "threshold": 0.2958,
+      "consistent": true,
+      "recontact_criterion": null,
+      "xi_L": 0.0157
+     },
+     {
+      "expert": "R03",
+      "attention_ok": false,
+      "attention_reasons": [
+       "worst criterion not rated 1 in others-to-worst"
+      ],
+      "CR": 1.0,
+      "threshold": 0.2958,
+      "consistent": false,
+      "recontact_criterion": "TCO",
+      "xi_L": 0.1996
+     },
+     {
+      "expert": "R05",
+      "attention_ok": false,
+      "attention_reasons": [
+       "best criterion not rated 1 in best-to-others",
+       "worst criterion not rated 1 in others-to-worst",
+       "best-to-worst differs between the vectors by more than 1"
+      ],
+      "CR": 1.4333,
+      "threshold": 0.2643,
+      "consistent": false,
+      "recontact_criterion": "SECC",
+      "xi_L": 0.6499
+     },
+     {
+      "expert": "R06",
+      "attention_ok": true,
+      "attention_reasons": [],
+      "CR": 0.3,
+      "threshold": 0.2643,
+      "consistent": false,
+      "recontact_criterion": "SECC",
+      "xi_L": 0.0843
+     }
+    ]
+   },
+   "A14_run": false,
+   "ranking_descriptive": {
+    "scenario": "S2",
+    "topsis": {
+     "C1": 0.2067,
+     "C2": 0.1242,
+     "C3": 0.8408,
+     "C4": 0.7463,
+     "C5": 0.2537,
+     "C6": 0.7463,
+     "C7": 0.1975
+    },
+    "order_topsis": [
+     "C3",
+     "C4",
+     "C6",
+     "C5",
+     "C1",
+     "C7",
+     "C2"
+    ],
+    "order_topsis_minmax": [
+     "C3",
+     "C4",
+     "C6",
+     "C5",
+     "C1",
+     "C7",
+     "C2"
+    ],
+    "order_promethee_vshape": [
+     "C3",
+     "C4",
+     "C6",
+     "C5",
+     "C1",
+     "C7",
+     "C2"
+    ],
+    "order_promethee_usual": [
+     "C3",
+     "C4",
+     "C6",
+     "C5",
+     "C1",
+     "C7",
+     "C2"
+    ],
+    "tau_b_topsis_promethee": 1.0,
+    "order_topsis_arithmetic_weights": [
+     "C3",
+     "C4",
+     "C6",
+     "C5",
+     "C1",
+     "C7",
+     "C2"
+    ],
+    "order_without_C7": [
+     "C3",
+     "C4",
+     "C6",
+     "C5",
+     "C1",
+     "C2"
+    ],
+    "R-b_order_stable": true,
+    "variants": {},
+    "frontier_pair": [
+     "TTDP",
+     "AIRD"
+    ]
+   },
+   "choice_counts": {
+    "MOST": {
+     "TTDP": 4,
+     "AIRD": 0,
+     "PORT": 0,
+     "TCO": 0,
+     "SECC": 0
+    },
+    "LEAST": {
+     "TTDP": 0,
+     "AIRD": 0,
+     "PORT": 3,
+     "TCO": 1,
+     "SECC": 0
+    },
+    "n": 4
+   },
+   "E-O1": {
+    "scenario": "S2",
+    "panellists": [
+     "R02",
+     "R03",
+     "R05",
+     "R06"
+    ],
+    "dropped_same_most_least": [],
+    "secc_floor_excluded": [],
+    "main": {
+     "first_rank": {
+      "C1": 0.0,
+      "C2": 0.0,
+      "C3": 0.775,
+      "C4": 0.1079,
+      "C5": 0.0003,
+      "C6": 0.1168,
+      "C7": 0.0
+     },
+     "acceptability": {
+      "C1": [
+       0.0,
+       0.0,
+       0.0,
+       0.0282,
+       0.643,
+       0.1576,
+       0.1712
+      ],
+      "C2": [
+       0.0,
+       0.0,
+       0.0064,
+       0.1057,
+       0.091,
+       0.2407,
+       0.5562
+      ],
+      "C3": [
+       0.775,
+       0.0518,
+       0.1668,
+       0.0064,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "C4": [
+       0.1079,
+       0.4529,
+       0.4105,
+       0.0287,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "C5": [
+       0.0003,
+       0.0432,
+       0.0103,
+       0.74,
+       0.0779,
+       0.1109,
+       0.0174
+      ],
+      "C6": [
+       0.1168,
+       0.4521,
+       0.406,
+       0.0251,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "C7": [
+       0.0,
+       0.0,
+       0.0,
+       0.0659,
+       0.1881,
+       0.4908,
+       0.2552
+      ]
+     },
+     "central_weights": {
+      "C1": null,
+      "C2": null,
+      "C3": [
+       0.4583,
+       0.1735,
+       0.0474,
+       0.1374,
+       0.1833
+      ],
+      "C4": [
+       0.4422,
+       0.1468,
+       0.1606,
+       0.1287,
+       0.1217
+      ],
+      "C5": [
+       0.3032,
+       0.1111,
+       0.0274,
+       0.2646,
+       0.2936
+      ],
+      "C6": [
+       0.4529,
+       0.1501,
+       0.1493,
+       0.1317,
+       0.1159
+      ],
+      "C7": null
+     },
+     "confidence": {
+      "C1": null,
+      "C2": null,
+      "C3": 1.0,
+      "C4": 0.5046,
+      "C5": 0.0277,
+      "C6": 0.5076,
+      "C7": null
+     }
+    },
+    "a1_only_panellists": [
+     "R02",
+     "R06"
+    ],
+    "a1_only": {
+     "first_rank": {
+      "C1": 0.0,
+      "C2": 0.0,
+      "C3": 0.8679,
+      "C4": 0.0598,
+      "C5": 0.0007,
+      "C6": 0.0716,
+      "C7": 0.0
+     },
+     "acceptability": {
+      "C1": [
+       0.0,
+       0.0,
+       0.0,
+       0.0335,
+       0.7585,
+       0.1734,
+       0.0346
+      ],
+      "C2": [
+       0.0,
+       0.0,
+       0.0,
+       0.0059,
+       0.0537,
+       0.2666,
+       0.6738
+      ],
+      "C3": [
+       0.8679,
+       0.0708,
+       0.0611,
+       0.0002,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "C4": [
+       0.0598,
+       0.4423,
+       0.4669,
+       0.031,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "C5": [
+       0.0007,
+       0.0474,
+       0.0125,
+       0.8216,
+       0.0578,
+       0.038,
+       0.022
+      ],
+      "C6": [
+       0.0716,
+       0.4395,
+       0.4595,
+       0.0294,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "C7": [
+       0.0,
+       0.0,
+       0.0,
+       0.0784,
+       0.13,
+       0.522,
+       0.2696
+      ]
+     },
+     "central_weights": {
+      "C1": null,
+      "C2": null,
+      "C3": [
+       0.4574,
+       0.1723,
+       0.0387,
+       0.1544,
+       0.1771
+      ],
+      "C4": [
+       0.4493,
+       0.1446,
+       0.051,
+       0.2538,
+       0.1013
+      ],
+      "C5": [
+       0.2682,
+       0.1535,
+       0.0849,
+       0.2469,
+       0.2465
+      ],
+      "C6": [
+       0.4534,
+       0.1365,
+       0.0492,
+       0.2574,
+       0.1035
+      ],
+      "C7": null
+     },
+     "confidence": {
+      "C1": null,
+      "C2": null,
+      "C3": 1.0,
+      "C4": 0.187,
+      "C5": 0.0288,
+      "C6": 0.1859,
+      "C7": null
+     }
+    },
+    "variants": {
+     "K9 C6 TTDP=1": {
+      "C1": 0.0,
+      "C2": 0.0,
+      "C3": 0.8062,
+      "C4": 0.1938,
+      "C5": 0.0,
+      "C6": 0.0,
+      "C7": 0.0
+     },
+     "K7 Enterprise edition": {
+      "C1": 0.0,
+      "C2": 0.0,
+      "C3": 0.7724,
+      "C4": 0.1151,
+      "C5": 0.0009,
+      "C6": 0.1116,
+      "C7": 0.0
+     },
+     "K11 directional TCO": {
+      "C1": 0.0,
+      "C2": 0.0,
+      "C3": 0.7989,
+      "C4": 0.1833,
+      "C5": 0.0,
+      "C6": 0.0178,
+      "C7": 0.0
+     }
+    },
+    "uniform_reference": {
+     "first_rank": {
+      "C1": 0.0017,
+      "C2": 0.0152,
+      "C3": 0.2187,
+      "C4": 0.2268,
+      "C5": 0.2699,
+      "C6": 0.2231,
+      "C7": 0.0446
+     },
+     "acceptability": {
+      "C1": [
+       0.0017,
+       0.045,
+       0.2045,
+       0.0595,
+       0.1726,
+       0.1703,
+       0.3464
+      ],
+      "C2": [
+       0.0152,
+       0.0586,
+       0.2321,
+       0.1571,
+       0.1201,
+       0.1862,
+       0.2307
+      ],
+      "C3": [
+       0.2187,
+       0.2298,
+       0.1623,
+       0.0569,
+       0.1564,
+       0.1247,
+       0.0512
+      ],
+      "C4": [
+       0.2268,
+       0.2724,
+       0.167,
+       0.114,
+       0.1124,
+       0.07,
+       0.0374
+      ],
+      "C5": [
+       0.2699,
+       0.078,
+       0.0362,
+       0.1633,
+       0.1602,
+       0.2054,
+       0.087
+      ],
+      "C6": [
+       0.2231,
+       0.2772,
+       0.1576,
+       0.1176,
+       0.1187,
+       0.0691,
+       0.0367
+      ],
+      "C7": [
+       0.0446,
+       0.039,
+       0.0403,
+       0.3316,
+       0.1596,
+       0.1743,
+       0.2106
+      ]
+     },
+     "central_weights": {
+      "C1": [
+       0.0629,
+       0.2991,
+       0.0429,
+       0.4578,
+       0.1373
+      ],
+      "C2": [
+       0.0463,
+       0.1496,
+       0.3841,
+       0.2947,
+       0.1253
+      ],
+      "C3": [
+       0.3198,
+       0.2498,
+       0.0699,
+       0.1906,
+       0.1699
+      ],
+      "C4": [
+       0.2164,
+       0.1511,
+       0.3056,
+       0.2074,
+       0.1195
+      ],
+      "C5": [
+       0.0997,
+       0.2042,
+       0.1211,
+       0.1855,
+       0.3895
+      ],
+      "C6": [
+       0.22,
+       0.154,
+       0.3061,
+       0.2065,
+       0.1134
+      ],
+      "C7": [
+       0.0634,
+       0.4367,
+       0.1764,
+       0.2476,
+       0.0759
+      ]
+     },
+     "confidence": {
+      "C1": 0.0599,
+      "C2": 0.2077,
+      "C3": 0.9785,
+      "C4": 0.4995,
+      "C5": 1.0,
+      "C6": 0.5054,
+      "C7": 0.715
+     }
+    }
+   },
+   "E-C1": {
+    "answers": {
+     "R02": {
+      "direction": "Carbon intensity matters less",
+      "rating": 8,
+      "a": 8.0,
+      "consistent": true
+     },
+     "R03": {
+      "direction": "Carbon intensity matters less",
+      "rating": 7,
+      "a": 7.0,
+      "consistent": true
+     },
+     "R05": {
+      "direction": "Carbon intensity matters less",
+      "rating": 6,
+      "a": 6.0,
+      "consistent": true
+     },
+     "R06": {
+      "direction": "Carbon intensity matters less",
+      "rating": 5,
+      "a": 5.0,
+      "consistent": true
+     }
+    },
+    "carbon_weight_valid_bwm": {
+     "R02": 0.054003724394785846,
+     "R06": 0.077720207253886
+    },
+    "inconsistent_answers": 0
+   }
+  },
+  "S3": {
+   "scenario": "S3",
+   "parsed_responses": 4,
+   "valid_A1": 2,
+   "weights": {
+    "experts": [
+     "R02",
+     "R03"
+    ],
+    "individual": {
+     "R02": {
+      "TTDP": 0.119,
+      "AIRD": 0.119,
+      "PORT": 0.4524,
+      "TCO": 0.0714,
+      "SECC": 0.2381
+     },
+     "R03": {
+      "TTDP": 0.1233,
+      "AIRD": 0.0479,
+      "PORT": 0.5,
+      "TCO": 0.1233,
+      "SECC": 0.2055
+     }
+    },
+    "group_geometric": {
+     "TTDP": 0.1227,
+     "AIRD": 0.0765,
+     "PORT": 0.4817,
+     "TCO": 0.095,
+     "SECC": 0.224
+    },
+    "group_arithmetic": {
+     "TTDP": 0.1212,
+     "AIRD": 0.0835,
+     "PORT": 0.4762,
+     "TCO": 0.0974,
+     "SECC": 0.2218
+    },
+    "group_consistent_only": {
+     "TTDP": 0.119,
+     "AIRD": 0.119,
+     "PORT": 0.4524,
+     "TCO": 0.0714,
+     "SECC": 0.2381
+    },
+    "kendalls_W": 0.8816,
+    "responses": [
+     {
+      "expert": "R02",
+      "attention_ok": true,
+      "attention_reasons": [],
+      "CR": 0.0667,
+      "threshold": 0.2643,
+      "consistent": true,
+      "recontact_criterion": null,
+      "xi_L": 0.0238
+     },
+     {
+      "expert": "R03",
+      "attention_ok": true,
+      "attention_reasons": [],
+      "CR": 0.3036,
+      "threshold": 0.2958,
+      "consistent": false,
+      "recontact_criterion": "TTDP",
+      "xi_L": 0.1164
+     },
+     {
+      "expert": "R05",
+      "attention_ok": false,
+      "attention_reasons": [
+       "best criterion not rated 1 in best-to-others",
+       "worst criterion not rated 1 in others-to-worst"
+      ],
+      "CR": 0.4,
+      "threshold": 0.2643,
+      "consistent": false,
+      "recontact_criterion": "TTDP",
+      "xi_L": 0.4516
+     },
+     {
+      "expert": "R06",
+      "attention_ok": false,
+      "attention_reasons": [
+       "worst criterion not rated 1 in others-to-worst"
+      ],
+      "CR": 0.2,
+      "threshold": 0.2643,
+      "consistent": true,
+      "recontact_criterion": null,
+      "xi_L": 0.0694
+     }
+    ]
+   },
+   "A14_run": false,
+   "ranking_descriptive": {
+    "scenario": "S3",
+    "topsis": {
+     "C1": 0.1798,
+     "C2": 0.6677,
+     "C3": 0.2351,
+     "C4": 0.6952,
+     "C5": 0.3048,
+     "C6": 0.6952,
+     "C7": 0.5288
+    },
+    "order_topsis": [
+     "C4",
+     "C6",
+     "C2",
+     "C7",
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "order_topsis_minmax": [
+     "C4",
+     "C6",
+     "C2",
+     "C7",
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "order_promethee_vshape": [
+     "C4",
+     "C6",
+     "C2",
+     "C7",
+     "C3",
+     "C5",
+     "C1"
+    ],
+    "order_promethee_usual": [
+     "C4",
+     "C6",
+     "C2",
+     "C3",
+     "C5",
+     "C7",
+     "C1"
+    ],
+    "tau_b_topsis_promethee": 0.8999999999999999,
+    "order_topsis_arithmetic_weights": [
+     "C4",
+     "C6",
+     "C2",
+     "C7",
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "order_without_C7": [
+     "C4",
+     "C6",
+     "C2",
+     "C5",
+     "C3",
+     "C1"
+    ],
+    "R-b_order_stable": true,
+    "variants": {},
+    "frontier_pair": [
+     "PORT",
+     "SECC"
+    ]
+   },
+   "choice_counts": {
+    "MOST": {
+     "TTDP": 0,
+     "AIRD": 1,
+     "PORT": 3,
+     "TCO": 0,
+     "SECC": 0
+    },
+    "LEAST": {
+     "TTDP": 1,
+     "AIRD": 2,
+     "PORT": 0,
+     "TCO": 1,
+     "SECC": 0
+    },
+    "n": 4
+   },
+   "E-O1": {
+    "scenario": "S3",
+    "panellists": [
+     "R02",
+     "R03",
+     "R05",
+     "R06"
+    ],
+    "dropped_same_most_least": [],
+    "secc_floor_excluded": [],
+    "main": {
+     "first_rank": {
+      "C1": 0.0027,
+      "C2": 0.0198,
+      "C3": 0.0143,
+      "C4": 0.3778,
+      "C5": 0.1228,
+      "C6": 0.3993,
+      "C7": 0.0633
+     },
+     "acceptability": {
+      "C1": [
+       0.0027,
+       0.0415,
+       0.0778,
+       0.0272,
+       0.0171,
+       0.0877,
+       0.746
+      ],
+      "C2": [
+       0.0198,
+       0.0825,
+       0.7046,
+       0.0331,
+       0.0369,
+       0.0531,
+       0.07
+      ],
+      "C3": [
+       0.0143,
+       0.0725,
+       0.0499,
+       0.0787,
+       0.3684,
+       0.3589,
+       0.0573
+      ],
+      "C4": [
+       0.3778,
+       0.3858,
+       0.066,
+       0.0264,
+       0.057,
+       0.0477,
+       0.0393
+      ],
+      "C5": [
+       0.1228,
+       0.0286,
+       0.0154,
+       0.0734,
+       0.3463,
+       0.3732,
+       0.0403
+      ],
+      "C6": [
+       0.3993,
+       0.3669,
+       0.0657,
+       0.0252,
+       0.0563,
+       0.0471,
+       0.0395
+      ],
+      "C7": [
+       0.0633,
+       0.0222,
+       0.0206,
+       0.736,
+       0.118,
+       0.0323,
+       0.0076
+      ]
+     },
+     "central_weights": {
+      "C1": [
+       0.0289,
+       0.4931,
+       0.0655,
+       0.2926,
+       0.1199
+      ],
+      "C2": [
+       0.06,
+       0.0848,
+       0.4465,
+       0.2557,
+       0.1531
+      ],
+      "C3": [
+       0.0476,
+       0.483,
+       0.0971,
+       0.2476,
+       0.1247
+      ],
+      "C4": [
+       0.1632,
+       0.102,
+       0.4433,
+       0.1235,
+       0.168
+      ],
+      "C5": [
+       0.0385,
+       0.4588,
+       0.1202,
+       0.1564,
+       0.2261
+      ],
+      "C6": [
+       0.1642,
+       0.0974,
+       0.4457,
+       0.1255,
+       0.1672
+      ],
+      "C7": [
+       0.0303,
+       0.5163,
+       0.2052,
+       0.1578,
+       0.0904
+      ]
+     },
+     "confidence": {
+      "C1": 0.1055,
+      "C2": 0.1661,
+      "C3": 0.2638,
+      "C4": 0.4923,
+      "C5": 0.9998,
+      "C6": 0.5034,
+      "C7": 1.0
+     }
+    },
+    "a1_only_panellists": [
+     "R02",
+     "R03"
+    ],
+    "a1_only": {
+     "first_rank": {
+      "C1": 0.0,
+      "C2": 0.0165,
+      "C3": 0.0,
+      "C4": 0.4849,
+      "C5": 0.0001,
+      "C6": 0.4984,
+      "C7": 0.0001
+     },
+     "acceptability": {
+      "C1": [
+       0.0,
+       0.0,
+       0.0,
+       0.0,
+       0.0059,
+       0.0572,
+       0.9369
+      ],
+      "C2": [
+       0.0165,
+       0.0629,
+       0.9153,
+       0.0052,
+       0.0001,
+       0.0,
+       0.0
+      ],
+      "C3": [
+       0.0,
+       0.0,
+       0.0046,
+       0.0792,
+       0.4718,
+       0.4129,
+       0.0315
+      ],
+      "C4": [
+       0.4849,
+       0.4747,
+       0.0385,
+       0.0018,
+       0.0001,
+       0.0,
+       0.0
+      ],
+      "C5": [
+       0.0001,
+       0.0002,
+       0.0008,
+       0.0738,
+       0.3963,
+       0.4972,
+       0.0316
+      ],
+      "C6": [
+       0.4984,
+       0.4619,
+       0.0383,
+       0.0014,
+       0.0,
+       0.0,
+       0.0
+      ],
+      "C7": [
+       0.0001,
+       0.0003,
+       0.0025,
+       0.8386,
+       0.1258,
+       0.0327,
+       0.0
+      ]
+     },
+     "central_weights": {
+      "C1": null,
+      "C2": [
+       0.0634,
+       0.027,
+       0.4861,
+       0.2573,
+       0.1662
+      ],
+      "C3": null,
+      "C4": [
+       0.1715,
+       0.1035,
+       0.4554,
+       0.1011,
+       0.1685
+      ],
+      "C5": [
+       0.0713,
+       0.0096,
+       0.3098,
+       0.3047,
+       0.3046
+      ],
+      "C6": [
+       0.1682,
+       0.1038,
+       0.4567,
+       0.105,
+       0.1663
+      ],
+      "C7": [
+       0.0652,
+       0.0326,
+       0.4356,
+       0.4255,
+       0.0411
+      ]
+     },
+     "confidence": {
+      "C1": null,
+      "C2": 0.1544,
+      "C3": null,
+      "C4": 0.4998,
+      "C5": 0.0778,
+      "C6": 0.5023,
+      "C7": 0.013
+     }
+    },
+    "variants": {
+     "K9 C6 TTDP=1": {
+      "C1": 0.0044,
+      "C2": 0.0282,
+      "C3": 0.0211,
+      "C4": 0.7399,
+      "C5": 0.1184,
+      "C6": 0.0215,
+      "C7": 0.0665
+     },
+     "K7 Enterprise edition": {
+      "C1": 0.0047,
+      "C2": 0.0193,
+      "C3": 0.0141,
+      "C4": 0.392,
+      "C5": 0.1234,
+      "C6": 0.3782,
+      "C7": 0.0683
+     },
+     "K11 directional TCO": {
+      "C1": 0.0174,
+      "C2": 0.0517,
+      "C3": 0.0456,
+      "C4": 0.6619,
+      "C5": 0.0848,
+      "C6": 0.0882,
+      "C7": 0.0504
+     }
+    },
+    "uniform_reference": {
+     "first_rank": {
+      "C1": 0.0017,
+      "C2": 0.0152,
+      "C3": 0.2187,
+      "C4": 0.2268,
+      "C5": 0.2699,
+      "C6": 0.2231,
+      "C7": 0.0446
+     },
+     "acceptability": {
+      "C1": [
+       0.0017,
+       0.045,
+       0.2045,
+       0.0595,
+       0.1726,
+       0.1703,
+       0.3464
+      ],
+      "C2": [
+       0.0152,
+       0.0586,
+       0.2321,
+       0.1571,
+       0.1201,
+       0.1862,
+       0.2307
+      ],
+      "C3": [
+       0.2187,
+       0.2298,
+       0.1623,
+       0.0569,
+       0.1564,
+       0.1247,
+       0.0512
+      ],
+      "C4": [
+       0.2268,
+       0.2724,
+       0.167,
+       0.114,
+       0.1124,
+       0.07,
+       0.0374
+      ],
+      "C5": [
+       0.2699,
+       0.078,
+       0.0362,
+       0.1633,
+       0.1602,
+       0.2054,
+       0.087
+      ],
+      "C6": [
+       0.2231,
+       0.2772,
+       0.1576,
+       0.1176,
+       0.1187,
+       0.0691,
+       0.0367
+      ],
+      "C7": [
+       0.0446,
+       0.039,
+       0.0403,
+       0.3316,
+       0.1596,
+       0.1743,
+       0.2106
+      ]
+     },
+     "central_weights": {
+      "C1": [
+       0.0629,
+       0.2991,
+       0.0429,
+       0.4578,
+       0.1373
+      ],
+      "C2": [
+       0.0463,
+       0.1496,
+       0.3841,
+       0.2947,
+       0.1253
+      ],
+      "C3": [
+       0.3198,
+       0.2498,
+       0.0699,
+       0.1906,
+       0.1699
+      ],
+      "C4": [
+       0.2164,
+       0.1511,
+       0.3056,
+       0.2074,
+       0.1195
+      ],
+      "C5": [
+       0.0997,
+       0.2042,
+       0.1211,
+       0.1855,
+       0.3895
+      ],
+      "C6": [
+       0.22,
+       0.154,
+       0.3061,
+       0.2065,
+       0.1134
+      ],
+      "C7": [
+       0.0634,
+       0.4367,
+       0.1764,
+       0.2476,
+       0.0759
+      ]
+     },
+     "confidence": {
+      "C1": 0.0599,
+      "C2": 0.2077,
+      "C3": 0.9785,
+      "C4": 0.4995,
+      "C5": 1.0,
+      "C6": 0.5054,
+      "C7": 0.715
+     }
+    }
+   },
+   "E-C1": {
+    "answers": {
+     "R02": {
+      "direction": "Carbon intensity matters less",
+      "rating": 3,
+      "a": 3.0,
+      "consistent": true
+     },
+     "R03": {
+      "direction": "Carbon intensity matters more",
+      "rating": 3,
+      "a": 0.3333333333333333,
+      "consistent": true
+     },
+     "R05": {
+      "direction": "Equally important",
+      "rating": 4,
+      "a": 1.0,
+      "consistent": false
+     },
+     "R06": {
+      "direction": "Equally important",
+      "rating": 6,
+      "a": 1.0,
+      "consistent": false
+     }
+    },
+    "carbon_weight_valid_bwm": {
+     "R02": 0.1310344827586207,
+     "R03": 0.6
+    },
+    "inconsistent_answers": 2
+   }
+  }
+ },
+ "A7": {
+  "TTDP": {
+   "stat": 0.026165,
+   "p": 0.1667,
+   "p_holm": 0.5,
+   "kind": "exact"
+  },
+  "AIRD": {
+   "stat": 0.005534,
+   "p": 0.1667,
+   "p_holm": 0.5,
+   "kind": "exact"
+  },
+  "PORT": {
+   "stat": 0.031244,
+   "p": 0.0417,
+   "p_holm": 0.2083,
+   "kind": "exact"
+  },
+  "TCO": {
+   "stat": 0.001183,
+   "p": 0.2083,
+   "p_holm": 0.5,
+   "kind": "exact"
+  },
+  "SECC": {
+   "stat": 0.025637,
+   "p": 0.0417,
+   "p_holm": 0.2083,
+   "kind": "exact"
+  }
+ },
+ "H": {
+  "H1 (S1: SECC highest)": true,
+  "H2 (S2: TTDP or AIRD highest)": true,
+  "H3 (S3: PORT above S2)": true,
+  "top criterion by scenario": {
+   "S1": "SECC",
+   "S2": "TTDP",
+   "S3": "PORT"
+  }
+ },
+ "P_exploratory_E-O1": {
+  "P1 (S1: C1 or C3 highest)": [
+   "not supported",
+   -0.502
+  ],
+  "P2 (S2: C5+C6 below 10%)": [
+   "not supported",
+   0.1171
+  ],
+  "P3 (S3: C2, C4 or C6 highest)": [
+   "supported",
+   0.2765
+  ],
+  "P4 (hub beats every centralised and federated in >=1 scenario)": [
+   "supported",
+   {
+    "S1": [
+     "not supported",
+     -0.502
+    ],
+    "S2": [
+     "supported",
+     0.6582
+    ],
+    "S3": [
+     "indeterminate",
+     -0.0215
+    ]
+   }
+  ]
+ },
+ "P_as_specified_A14": null,
+ "P_as_specified_A14_scenarios": [],
+ "A8_subgroup": {
+  "members": [
+   "R02",
+   "R05",
+   "R06"
+  ],
+  "weights": {
+   "S1": {
+    "n": 2,
+    "group_geometric": {
+     "TTDP": 0.0619,
+     "AIRD": 0.117,
+     "PORT": 0.2136,
+     "TCO": 0.1451,
+     "SECC": 0.4624
+    }
+   },
+   "S2": {
+    "n": 2,
+    "group_geometric": {
+     "TTDP": 0.4389,
+     "AIRD": 0.2445,
+     "PORT": 0.0557,
+     "TCO": 0.163,
+     "SECC": 0.0978
+    }
+   },
+   "S3": {
+    "n": 1,
+    "group_geometric": {
+     "TTDP": 0.119,
+     "AIRD": 0.119,
+     "PORT": 0.4524,
+     "TCO": 0.0714,
+     "SECC": 0.2381
+    }
+   }
+  }
+ }
+}
